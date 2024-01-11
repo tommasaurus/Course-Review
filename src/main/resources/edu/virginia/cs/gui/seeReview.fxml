@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.cs.gui.ReviewController">
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="400.0">
+            <children>
+
+                <TextField fx:id="seeCourse" layoutX="30.0" layoutY="135.0" prefHeight="30.0" prefWidth="200.0" promptText="Enter a Course">
+                    <font>
+                        <Font name="Times New Roman" size="14.0" />
+                    </font>
+                </TextField>
+
+                <Button fx:id="seeReview" layoutX="240.0" layoutY="135.0" mnemonicParsing="false" onMouseClicked="#onClickSeeReview" prefWidth="150.0" text="See Reviews" visible="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font></Button>
+                <TextField fx:id="reviewCourseMessage" editable="false" layoutX="10.0" layoutY="185.0" prefHeight="140.0" prefWidth="380.0" visible="false">
+                    <font>
+                        <Font name="Times New Roman" size="14.0" />
+                    </font>
+                </TextField>
+
+                <TextField fx:id="averageRating" editable="false" layoutX="10.0" layoutY="340.0" prefHeight="30.0" prefWidth="380.0" visible="true">
+                    <font>
+                        <Font name="Times New Roman" size="14.0" />
+                    </font>
+                </TextField>
+
+                <Button fx:id="nextButton" layoutX="220.0" layoutY="390.0" mnemonicParsing="false" onMouseClicked="#onClickNext" prefWidth="100.0" text="Next" visible="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font></Button>
+
+                <Button fx:id="prevButton" layoutX="80.0" layoutY="390.0" mnemonicParsing="false" onMouseClicked="#onClickPrev" prefWidth="100.0" text="Previous" visible="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font></Button>
+
+                <Button fx:id="goBack" layoutX="150.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#onClicklogOutButton" prefWidth="100.0" text="Go Back" visible="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font></Button>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
